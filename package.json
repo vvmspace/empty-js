@@ -1,0 +1,31 @@
+{
+  "name": "empty-js",
+  "version": "1.0.0",
+  "description": "empty js function like empty() in php",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vvmspace/empty-js.git"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0"
+  },
+  "keywords": [
+    "empty",
+    "js",
+    "php",
+    "array",
+    "object",
+    "isset",
+    "null",
+    "nil",
+    "false",
+    "value"
+  ],
+  "author": "Vladimir V. Myagdeev (js@vvm.space)",
+  "license": "MIT",
+  "homepage": "https://github.com/vvmspace/empty-js#readme"
+}

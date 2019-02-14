@@ -1,0 +1,60 @@
+var assert = require('assert')
+var empty = require('../index.js')
+
+describe('empty-js', function () {
+
+  it('Testing nulls', function () {
+    assert(empty(null) == true)
+    assert(empty(undefined) == true)
+    assert(empty() == true)
+  })
+
+  it('Testing booleans', function () {
+    assert(empty(false) == false)
+    assert(empty(true) == false)
+  })
+
+  it('Testing arrays', function () {
+    assert(empty([]) == true)
+    assert(empty(['a', 'b']) == false)
+  })
+
+  it('Testing maps', function () {
+    assert(empty(new Map()) == true)
+    assert(empty(new Map([['key', 'value']])) == false)
+  })
+
+  it('Testing sets', function () {
+    assert(empty(new Set()) == true)
+    assert(empty(new Set([1,2,3,4])) == false)
+  })
+
+  it('Testing errors', function () {
+    assert(empty(new Error()) == true)
+    assert(empty(new Error('')) == true)
+    assert(empty(new Error('test')) == false)
+  })
+
+  it('Testing objects', function () {
+    assert(empty({}) == true)
+    assert(empty({ a: 'b' }) == false)
+    assert(empty({ length: 0 }) == false)
+  })
+
+  it('Testing strings', function () {
+    assert(empty('') == true)
+    assert(empty('string') == false)
+    assert(empty('Error') == false)
+  })
+
+  it('Testing numbers', function () {
+    assert(empty(0) == true)
+    assert(empty(42) == false)
+  })
+
+  it('Testing functions', function () {
+    assert(empty(function(){}) == true)
+    assert(empty(function(a,b){}) == false)
+  })
+
+})
