@@ -1,5 +1,5 @@
 {
-  "name": "empty-js",
+  "name": "empty-php-js",
   "version": "1.0.0",
   "description": "empty js function like empty() in php",
   "main": "index.js",
