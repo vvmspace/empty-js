@@ -1,6 +1,6 @@
 {
   "name": "empty-php-js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "empty js function like empty() in php",
   "main": "index.js",
   "scripts": {
