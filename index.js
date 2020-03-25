@@ -9,9 +9,9 @@ const empty = value => {
   if (value == null) return true;
 
   // By types:
-  if ('boolean' == typeof value) return false;
+  if ('boolean' == typeof value) return !value;
   if ('number' == typeof value) return value === 0;
-  if ('string' == typeof value) return value.length === 0;
+  if ('string' == typeof value) return value === '0' || value.length === 0;
   if ('function' == typeof value) return value.length === 0;
   
   // Empty arrays:
