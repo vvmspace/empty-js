@@ -45,6 +45,7 @@ describe('empty-js', function () {
     assert(empty('') == true)
     assert(empty('string') == false)
     assert(empty('Error') == false)
+    assert(empty('0') == true)
   })
 
   it('Testing numbers', function () {
