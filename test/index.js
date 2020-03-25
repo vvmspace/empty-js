@@ -10,7 +10,7 @@ describe('empty-js', function () {
   })
 
   it('Testing booleans', function () {
-    assert(empty(false) == false)
+    assert(empty(false) == true)
     assert(empty(true) == false)
   })
 
