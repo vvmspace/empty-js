@@ -1,1 +1,1 @@
-export declare function empty(value: unknown): boolean;
+export default function empty(value: unknown): boolean;
