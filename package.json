@@ -3,6 +3,7 @@
   "version": "1.0.2",
   "description": "empty js function like empty() in php",
   "main": "index.js",
+  "types": "types.d.ts",
   "scripts": {
     "test": "mocha"
   },
