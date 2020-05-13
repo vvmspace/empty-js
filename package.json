@@ -7,7 +7,7 @@
     "types": "types.d.ts",
     "scripts": {
         "test": "npm run build && mocha",
-        "build": "rollup --config rollup.config.js",
+        "build": "rollup --config rollup.config.js"
     },
     "repository": {
         "type": "git",
