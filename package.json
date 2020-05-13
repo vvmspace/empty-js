@@ -1,31 +1,47 @@
 {
-  "name": "empty-php-js",
-  "version": "1.0.2",
-  "description": "empty js function like empty() in php",
-  "main": "index.js",
-  "scripts": {
-    "test": "mocha"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vvmspace/empty-js.git"
-  },
-  "devDependencies": {
-    "mocha": "^3.2.0"
-  },
-  "keywords": [
-    "empty",
-    "js",
-    "php",
-    "array",
-    "object",
-    "isset",
-    "null",
-    "nil",
-    "false",
-    "value"
-  ],
-  "author": "Vladimir V. Myagdeev (js@vvm.space)",
-  "license": "MIT",
-  "homepage": "https://github.com/vvmspace/empty-js#readme"
+    "name": "empty-php",
+    "version": "1.0.0",
+    "description": "PHP empty function in JS",
+    "main": "dist/index.cjs.js",
+    "module": "dist/index.esm.js",
+    "types": "types.d.ts",
+    "scripts": {
+        "test": "npm run build && mocha",
+        "build": "rollup --config rollup.config.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Ekman/empty-js.git"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.9.6",
+        "@babel/preset-env": "^7.9.6",
+        "@rollup/plugin-babel": "^5.0.0",
+        "mocha": "^3.2.0",
+        "rollup": "^2.10.0"
+    },
+    "keywords": [
+        "empty",
+        "js",
+        "php",
+        "array",
+        "object",
+        "isset",
+        "null",
+        "nil",
+        "false",
+        "value"
+    ],
+    "author": "Niklas Ekman <nikl.ekman@gmail.com>",
+    "license": "MIT",
+    "homepage": "https://github.com/Ekman/empty-js#readme",
+    "browserslist": [
+        "last 2 major versions",
+        "ie 11",
+        "node >= 10"
+    ],
+    "files": [
+        "dist/*",
+        "types.d.ts"
+    ]
 }

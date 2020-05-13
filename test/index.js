@@ -1,5 +1,5 @@
 var assert = require('assert')
-var empty = require('../index.js')
+var empty = require('../dist/index.cjs.js')
 
 describe('empty-js', function () {
 
