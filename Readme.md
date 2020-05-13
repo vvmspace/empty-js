@@ -27,3 +27,7 @@ To build:
 ```bash
 npm run build
 ```
+
+## Credits
+
+This library was forked from [https://github.com/vvmspace/empty-js](https://github.com/vvmspace/empty-js).
