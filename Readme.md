@@ -12,6 +12,19 @@ According to the PHP documentation, the following values are considered to be em
 * FALSE
 * array() (an empty array)
 
+## Usage
+
+To use the library:
+
+```javascript
+import { empty } from "empty-php";
+
+if (empty(myVar)) {
+    // It's empty
+}
+```
+
+
 ## Test
 
 To test:
