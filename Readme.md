@@ -17,7 +17,7 @@ According to the PHP documentation, the following values are considered to be em
 To use the library:
 
 ```javascript
-import { empty } from "empty-php";
+import empty from "empty-php";
 
 if (empty(myVar)) {
     // It's empty
