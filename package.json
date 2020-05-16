@@ -6,9 +6,11 @@
     "module": "dist/index.esm.js",
     "types": "types.d.ts",
     "scripts": {
-        "test": "npm run build && mocha",
+        "test": "mocha",
+        "pretest": "npm run build",
         "build": "rollup --config rollup.config.js",
-        "deps": "npm install --ignore-scripts --no-optional --no-audit"
+        "deps": "npm install --ignore-scripts --no-optional --no-audit",
+        "prepublish": "npm run build"
     },
     "repository": {
         "type": "git",
