@@ -29,6 +29,12 @@ describe('empty-js', function () {
     assert(empty(new Set([1,2,3,4])) == false)
   })
 
+  it('Testing errors', function () {
+    assert(empty(new Error()) == false)
+    assert(empty(new Error('')) == false)
+    assert(empty(new Error('test')) == false)
+  })
+
   it('Testing objects', function () {
     assert(empty({}) == true)
     assert(empty({ a: 'b' }) == false)
@@ -48,8 +54,7 @@ describe('empty-js', function () {
   })
 
   it('Testing functions', function () {
-    assert(empty(function(){}) == true)
+    assert(empty(function(){}) == false)
     assert(empty(function(a,b){}) == false)
   })
-
 })
