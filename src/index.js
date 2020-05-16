@@ -17,9 +17,6 @@ export default function empty(value) {
     // Empty arrays:
     if (Array.isArray(value)) return value.length === 0;
 
-    // Error with empty message:
-    if (value instanceof Error) return value.message === '';
-
     // Empty objects:
     if (value.toString == Object.prototype.toString) {
         switch (value.toString()) {
